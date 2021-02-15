@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+## Catalyst Productivity
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+Catalyst Productivity is your to-do list reimagined. From the homepage, the user is able to keep track of current tasks/to-dos. Add new tasks as they arise and cross items off the list when you complete them. Beautiful pictures and inspiring quotes help keep you on track and motivated. Catalyst is a React app utilizing an Airtable API and is my version of Momentum, the popular Chrome extension.
 
-In the project directory, you can run:
+## Wireframes
 
-### `npm start`
+**Desktop View Wireframe:** https://imgur.com/a/doKRaiO
+This app is desktop-first, but will be fully-responsive. The background will be a high quality, beautiful image. The user will be greeted differently depending on the time of day (good morning, good afternoon, good evening) and asked to input their name. A clock will show the current time in 12 hour display. The user will be able to add tasks to do and check them off as they accomplish them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Tablet View Wireframe:** https://imgur.com/a/1KI2WmS
+The tablet view will be very similar to the desktop view except that the width will be more narrow. The user may see the tasks wrap to multiple lines depending on how long the task is.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Smartphone View Wireframe:** https://imgur.com/LTKzyhx
+The smartphone view will be much slimmer and shorter so the clock, greeting, and quote will shrink to fit the screen better. The user will probably also see the task text wrap to multiple lines depending on how long the task is.
 
-### `npm test`
+## Component Hierarchy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See my Component Hierarchy here: https://imgur.com/a/AMTy8Pd
 
-### `npm run build`
+## API and Data Sample
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+  "records": [
+    {
+      "id": "recP31YVSLNB4eoZe",
+      "fields": {
+        "title": "Crush Goals!"
+      },
+      "createdTime": "2021-02-15T20:45:13.000Z"
+    },
+    {
+      "id": "recMuEX9dizvwF6OE",
+      "fields": {
+        "title": "Have an awesome day"
+      },
+      "createdTime": "2021-02-15T20:45:13.000Z"
+    },
+    {
+      "id": "recHwnhynvUKhtN8v",
+      "fields": {},
+      "createdTime": "2021-02-15T20:45:13.000Z"
+    }
+  ],
+  "offset": "recHwnhynvUKhtN8v"
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### MVP/PostMVP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### MVP
 
-### `npm run eject`
+- Homepage displays the default tasks from Airtable
+- User can use a form to add and/or delete tasks
+- Clock accurately displays user's current time
+- User can input their name and it will accurately show on page
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### PostMVP
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Utilize OpenWeather API to add local weather
+- Display a different quote each time a user uses the page
+- Toggle messages/greetings the user will see
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Schedule
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Day       | Deliverable                                      | Status     |
+| --------- | ------------------------------------------------ | ---------- |
+| Feb 16    | Project Proposal & Approval                      | Incomplete |
+| Feb 17    | Component Creation/ Route Setup                  | Incomplete |
+| Feb 18    | Get, Set, & Delete Data & Basic Homepage Styling | Incomplete |
+| Feb 19    | Component Styling & MVP                          | Incomplete |
+| Feb 20-22 | Advanced CSS Styling & Post MVP                  | Incomplete |
+| Feb 23    | Presentations                                    | Incomplete |
 
-## Learn More
+## Timeframes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Component               | Priority | Estimated Time | Time Invested | Actual Time |
+| ----------------------- | :------: | :------------: | :-----------: | :---------: |
+| Proposal                |    H     |      2hrs      |       -       |      -      |
+| Component Outline       |    H     |      2hrs      |       -       |      -      |
+| Route Setup             |    H     |      1hrs      |       -       |      -      |
+| Connect Airtable        |    H     |      2hrs      |       -       |      -      |
+| Clock Comp Setup        |    H     |      2hrs      |       -       |      -      |
+| UserGreeting Comp Setup |    H     |      3hrs      |       -       |      -      |
+| Form Comp Setup         |    H     |      3hrs      |       -       |      -      |
+| Form Add Task           |    H     |      2hrs      |       -       |      -      |
+| Form Delete Task        |    H     |      2hrs      |       -       |      -      |
+| Footer Comp Setup       |    L     |      1hrs      |       -       |      -      |
+| Quote Comp Setup        |    H     |      2hrs      |       -       |      -      |
+| Basic Homepage Styling  |    H     |      2hrs      |       -       |      -      |
+| Basic Component Styling |    H     |      3hrs      |       -       |      -      |
+| Advanced CSS            |    H     |      4hrs      |       -       |      -      |
+| Total                   |    H     |     31hrs      |       -       |      -      |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## SWOT Analysis
 
-### Code Splitting
+### Strengths:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I know what I want my application to look like and think a solid plan will help me reach MVP in good time. I am pretty confident with my styling abilities and tend to enjoy it greatly. I feel that last week especially prepared me for this assignment and I'm confident in my ability to apply the concepts we've learned. I'm excited and eager to get started!
 
-### Analyzing the Bundle Size
+### Weaknesses:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Using params and routes/links has been a little confusing to wrap my head around at some points during this unit. I'll likely need a bit of a recap on some of the earlier concepts to make sure I understand them correctly.
 
-### Making a Progressive Web App
+### Opportunities:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+At first, working with React was a little uncomfortable. At the end of Unit 1, I was just getting comfortable with vanilla JavaScript and then we were introduced to React. Over the course of the 2 weeks, however, I've grown to thoroughly enjoy using React! It's easy to see how it can be scalable and I really like using functional components. This project is an opportunity for me to show all that I've learned in the past couple weeks and make a functional and beautiful app.
 
-### Advanced Configuration
+### Threats:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+It's sometimes difficult for me to accurately gauge how long certain tasks will take me. Sometimes I overestimate and other times I underestimate. I think I will improve with time, but it's something I'll need to be aware of during this project. Without the structure of class - with regular breaks - I also tend to power through tasks and can end up going too long without a break. I'll also have to be mindful of this and will try my best to set timers so I can take regular breaks and not get burned out.
