@@ -67,7 +67,7 @@ See my Component Hierarchy here: https://imgur.com/a/AMTy8Pd
 
 | Day       | Deliverable                                      | Status     |
 | --------- | ------------------------------------------------ | ---------- |
-| Feb 16    | Project Proposal & Approval                      | Incomplete |
+| Feb 16    | Project Proposal & Approval                      | Complete   |
 | Feb 17    | Component Creation/ Route Setup                  | Incomplete |
 | Feb 18    | Get, Set, & Delete Data & Basic Homepage Styling | Incomplete |
 | Feb 19    | Component Styling & MVP                          | Incomplete |
