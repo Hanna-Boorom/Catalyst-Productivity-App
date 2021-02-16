@@ -6,7 +6,7 @@ function UserGreeting() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setGreeting(`Welcome ${name}! What would you like to accomplish today?`);
+    setGreeting(`Welcome ${name}! Make today great!`);
   };
 
   return (
