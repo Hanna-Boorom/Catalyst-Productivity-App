@@ -5,6 +5,7 @@ import { baseURL, config } from "./services";
 import Clock from "./components/Clock";
 import Form from "./components/Form";
 import Nav from "./components/Nav";
+import Quote from "./components/Quote";
 import UserGreeting from "./components/UserGreeting";
 import "./App.css";
 
@@ -28,6 +29,7 @@ function App() {
         </div>
         <Clock />
         <UserGreeting />
+        <Quote />
       </Route>
 
       <Route path="/new">
