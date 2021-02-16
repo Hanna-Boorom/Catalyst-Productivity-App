@@ -8,12 +8,15 @@ Catalyst Productivity is your to-do list reimagined. From the homepage, the user
 
 **Desktop View Wireframe:** https://imgur.com/a/doKRaiO
 This app is desktop-first, but will be fully-responsive. The background will be a high quality, beautiful image. The user will be greeted differently depending on the time of day (good morning, good afternoon, good evening) and asked to input their name. A clock will show the current time in 12 hour display. The user will be able to add tasks to do and check them off as they accomplish them.
+This is the wireframe for the form link where users will be able to add their own tasks - desktop view: https://imgur.com/a/BJpJxKM
 
 **Tablet View Wireframe:** https://imgur.com/a/1KI2WmS
 The tablet view will be very similar to the desktop view except that the width will be more narrow. The user may see the tasks wrap to multiple lines depending on how long the task is.
+Form link wireframe for tablet view: https://imgur.com/a/OUVWXT2
 
 **Smartphone View Wireframe:** https://imgur.com/LTKzyhx
 The smartphone view will be much slimmer and shorter so the clock, greeting, and quote will shrink to fit the screen better. The user will probably also see the task text wrap to multiple lines depending on how long the task is.
+form link wireframe for smartphone view: https://imgur.com/a/YIoDYDM
 
 ## Component Hierarchy
 
@@ -27,24 +30,21 @@ See my Component Hierarchy here: https://imgur.com/a/AMTy8Pd
     {
       "id": "recP31YVSLNB4eoZe",
       "fields": {
-        "title": "Crush Goals!"
+        "title": "Crush Goals!",
+        "isCompleted": "false"
       },
       "createdTime": "2021-02-15T20:45:13.000Z"
     },
     {
       "id": "recMuEX9dizvwF6OE",
       "fields": {
-        "title": "Have an awesome day"
+        "title": "Have an awesome day",
+        "isCompleted": "false"
       },
-      "createdTime": "2021-02-15T20:45:13.000Z"
-    },
-    {
-      "id": "recHwnhynvUKhtN8v",
-      "fields": {},
       "createdTime": "2021-02-15T20:45:13.000Z"
     }
   ],
-  "offset": "recHwnhynvUKhtN8v"
+  "offset": "recMuEX9dizvwF6OE"
 }
 ```
 
