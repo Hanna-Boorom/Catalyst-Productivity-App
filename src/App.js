@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "./services";
 import Clock from "./components/Clock";
+import UserGreeting from "./components/UserGreeting";
 import "./App.css";
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
       <Route exact path="/">
         <div className="home-page">
           <h1>This will be the Home Page! </h1>
-          <Clock />
         </div>
+        <Clock />
+        <UserGreeting />
       </Route>
 
       <Route path="/new">
