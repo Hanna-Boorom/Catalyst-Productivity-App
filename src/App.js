@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "./services";
 import Clock from "./components/Clock";
@@ -7,6 +7,7 @@ import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Quote from "./components/Quote";
 import UserGreeting from "./components/UserGreeting";
+import Task from "./components/Task";
 import "./App.css";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   useEffect(() => {
     const getToDos = async () => {
       const resp = await axios.get(baseURL, config);
-      // console.log(resp.data.records);
+      console.log(resp.data.records);
       setTasks(resp.data.records);
     };
     getToDos();
@@ -26,10 +27,21 @@ function App() {
       <Route exact path="/">
         <div className="home-page">
           <Nav />
+
+          <Clock />
+
+          <UserGreeting />
+
+          <div className="tasks-container">
+            {tasks.map((task) => (
+              <Task key={task} task={task} />
+            ))}
+          </div>
+
+          <Link to="/new">Add a Task</Link>
+
+          <Quote />
         </div>
-        <Clock />
-        <UserGreeting />
-        <Quote />
       </Route>
 
       <Route path="/new">
