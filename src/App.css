@@ -1,5 +1,15 @@
+body {
+  background: url("https://images.unsplash.com/photo-1517685521684-f42a1db843c7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
+  color: white;
 }
 
 .App-logo {
