@@ -68,8 +68,8 @@ See my Component Hierarchy here: https://imgur.com/a/AMTy8Pd
 | Day       | Deliverable                                      | Status     |
 | --------- | ------------------------------------------------ | ---------- |
 | Feb 16    | Project Proposal & Approval                      | Complete   |
-| Feb 17    | Component Creation/ Route Setup                  | Incomplete |
-| Feb 18    | Get, Set, & Delete Data & Basic Homepage Styling | Incomplete |
+| Feb 17    | Component Creation/ Route Setup                  | Complete   |
+| Feb 17    | Get, Set, & Delete Data & Basic Homepage Styling | Complete   |
 | Feb 19    | Component Styling & MVP                          | Incomplete |
 | Feb 20-22 | Advanced CSS Styling & Post MVP                  | Incomplete |
 | Feb 23    | Presentations                                    | Incomplete |
@@ -78,15 +78,15 @@ See my Component Hierarchy here: https://imgur.com/a/AMTy8Pd
 
 | Component               | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal                |    H     |      2hrs      |       -       |      -      |
-| Component Outline       |    H     |      2hrs      |       -       |      -      |
-| Route Setup             |    H     |      1hrs      |       -       |      -      |
-| Connect Airtable        |    H     |      2hrs      |       -       |      -      |
-| Clock Comp Setup        |    H     |      2hrs      |       -       |      -      |
-| UserGreeting Comp Setup |    H     |      3hrs      |       -       |      -      |
-| Form Comp Setup         |    H     |      3hrs      |       -       |      -      |
-| Form Add Task           |    H     |      2hrs      |       -       |      -      |
-| Form Delete Task        |    H     |      2hrs      |       -       |      -      |
+| Proposal                |    H     |      2hrs      |      1hr      |     1hr     |
+| Component Outline       |    H     |      2hrs      |      1hr      |     1hr     |
+| Route Setup             |    H     |      1hrs      |     30min     |    30min    |
+| Connect Airtable        |    H     |      2hrs      |      1hr      |     1hr     |
+| Clock Comp Setup        |    H     |      2hrs      |      1hr      |     1hr     |
+| UserGreeting Comp Setup |    H     |      3hrs      |      2hr      |     2hr     |
+| Form Comp Setup         |    H     |      3hrs      |      2hr      |     2hr     |
+| Form Add Task           |    H     |      2hrs      |      2hr      |     2hr     |
+| Form Delete Task        |    H     |      2hrs      |      1hr      |     1hr     |
 | Footer Comp Setup       |    L     |      1hrs      |       -       |      -      |
 | Quote Comp Setup        |    H     |      2hrs      |       -       |      -      |
 | Basic Homepage Styling  |    H     |      2hrs      |       -       |      -      |
