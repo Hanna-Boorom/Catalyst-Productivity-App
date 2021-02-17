@@ -3,6 +3,7 @@ import { Link, Route } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "./services";
 import Clock from "./components/Clock";
+import Footer from "./components/Footer";
 import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Quote from "./components/Quote";
@@ -17,7 +18,7 @@ function App() {
   useEffect(() => {
     const getToDos = async () => {
       const resp = await axios.get(baseURL, config);
-      console.log(resp.data.records);
+      // console.log(resp.data.records);
       setTasks(resp.data.records);
     };
     getToDos();
@@ -43,6 +44,7 @@ function App() {
           <Link to="/new">Add a Task</Link>
 
           <Quote />
+          <Footer />
         </div>
       </Route>
 

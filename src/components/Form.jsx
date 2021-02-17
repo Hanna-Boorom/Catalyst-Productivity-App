@@ -5,19 +5,19 @@ import { baseURL, config } from "../services";
 
 function Form(props) {
   const [title, setTitle] = useState("");
-  const [isCompleted, setIsCompleted] = useState("");
+  const [isCompleted, setIsCompleted] = useState();
   // const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const newTask = {
-      isCompleted,
       title,
+      isCompleted,
     };
     await axios.post(baseURL, { newTask }, config);
     // props.setToggleFetch((curr) => !curr);
-    setIsCompleted("false");
+    setIsCompleted(false);
     // history.push("/");
   };
 
