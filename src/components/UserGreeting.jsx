@@ -6,19 +6,19 @@ function UserGreeting() {
   const [greeting, setGreeting] = useState("Howdy! What's' your name?");
   const [inputState, setInputState] = useState(false);
 
-  // useEffect(() => {
-  //   const name = localStorage.getItem("name");
-  //   if (name) {
-  //     setName(name);
-  //   }
-  // }, []);
+  useEffect(() => {
+    const localName = localStorage.getItem("name");
+    if (localName) {
+      setName(localName);
+    }
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setGreeting(`Welcome ${name}! Make today great!`);
     // const { value } = target;
 
-    // localStorage.setItem("name", e.target.value);
+    localStorage.setItem("name", e.target.value);
     setName("");
     setInputState(!inputState);
   };

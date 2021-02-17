@@ -12,6 +12,7 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
 
 nav a {
