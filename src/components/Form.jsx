@@ -5,19 +5,20 @@ import { baseURL, config } from "../services";
 
 function Form(props) {
   const [title, setTitle] = useState("");
-  const [isCompleted, setIsCompleted] = useState(false);
-  const history = useHistory();
+  const [isCompleted, setIsCompleted] = useState("");
+  // const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const newTask = {
-      title,
       isCompleted,
+      title,
     };
     await axios.post(baseURL, { newTask }, config);
-    props.setToggleFetch((curr) => !curr);
-    history.push("/");
+    // props.setToggleFetch((curr) => !curr);
+    setIsCompleted("false");
+    // history.push("/");
   };
 
   return (
@@ -30,6 +31,7 @@ function Form(props) {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
+        <button type="submit">Let's Do This!</button>
       </form>
       <nav className="form-nav">
         <Link to="/">Home</Link>

@@ -17,6 +17,7 @@ function App() {
   useEffect(() => {
     const getToDos = async () => {
       const resp = await axios.get(baseURL, config);
+      console.log(resp.data.records);
       setTasks(resp.data.records);
     };
     getToDos();
@@ -33,8 +34,9 @@ function App() {
           <UserGreeting />
 
           <div className="tasks-container">
+            <h3>Today's Tasks: </h3>
             {tasks.map((task) => (
-              <Task key={task} task={task} />
+              <Task key={task.id} task={task} />
             ))}
           </div>
 

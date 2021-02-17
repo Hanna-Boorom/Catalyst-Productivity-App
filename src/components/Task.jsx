@@ -1,8 +1,8 @@
 function Task(props) {
   return (
     <div className="indiv-task">
-      <h3>Today's Tasks: </h3>
-      <h4>{props.task.fields.title}</h4>
+      <input type="checkbox" id="title" />
+      <label htmlFor="title">{props.task.fields.title}</label>
     </div>
   );
 }
