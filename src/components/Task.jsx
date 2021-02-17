@@ -1,8 +1,7 @@
 function Task(props) {
-  const { todo } = props.task.fields;
-
   return (
     <div className="indiv-task">
+      <h3>Today's Tasks: </h3>
       <h4>{props.task.fields.title}</h4>
     </div>
   );

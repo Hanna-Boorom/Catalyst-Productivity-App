@@ -12,15 +12,15 @@ import "./App.css";
 
 function App() {
   const [tasks, setTasks] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(true);
 
   useEffect(() => {
     const getToDos = async () => {
       const resp = await axios.get(baseURL, config);
-      console.log(resp.data.records);
       setTasks(resp.data.records);
     };
     getToDos();
-  }, []);
+  }, [toggleFetch]);
 
   return (
     <div className="App">
@@ -46,7 +46,7 @@ function App() {
 
       <Route path="/new">
         <h1>What would you like to accomplish today?</h1>
-        <Form />
+        <Form setToggleFetch={setToggleFetch} />
       </Route>
     </div>
   );

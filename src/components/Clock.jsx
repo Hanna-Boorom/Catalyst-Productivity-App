@@ -17,7 +17,7 @@ function Clock() {
         })
       );
     }, 1000);
-  });
+  }, []);
 
   return (
     <div className="clock">
