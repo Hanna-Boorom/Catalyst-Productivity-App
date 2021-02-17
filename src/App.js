@@ -37,7 +37,7 @@ function App() {
           <div className="tasks-container">
             <h3>Today's Tasks: </h3>
             {tasks.map((task) => (
-              <Task key={task.id} task={task} />
+              <Task key={task.id} task={task} setToggleFetch={setToggleFetch} />
             ))}
           </div>
 
