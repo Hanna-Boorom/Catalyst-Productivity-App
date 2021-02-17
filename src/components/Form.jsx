@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
 
 function Form(props) {
   const [title, setTitle] = useState("");
-  // const [isCompleted, setIsCompleted] = useState(false);
   const history = useHistory();
 
   const handleSubmit = async (e) => {
@@ -19,7 +18,6 @@ function Form(props) {
 
     await axios.post(baseURL, newTask, config);
     props.setToggleFetch((curr) => !curr);
-    // setIsCompleted(false);
     history.push("/");
   };
 
@@ -35,9 +33,6 @@ function Form(props) {
         />
         <button type="submit">Let's Do This!</button>
       </form>
-      <nav className="form-nav">
-        <Link to="/">Home</Link>
-      </nav>
     </div>
   );
 }

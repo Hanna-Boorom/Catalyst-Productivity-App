@@ -28,8 +28,6 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <div className="home-page">
-          <Nav />
-
           <Clock />
 
           <UserGreeting />
@@ -49,6 +47,7 @@ function App() {
       </Route>
 
       <Route path="/new">
+        <Nav />
         <h1>What would you like to accomplish today?</h1>
         <Form setToggleFetch={setToggleFetch} />
       </Route>
