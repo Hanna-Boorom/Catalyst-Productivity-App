@@ -39,7 +39,7 @@ function App() {
             ))}
           </div>
 
-          <Link to="/new">Add a Task</Link>
+          <Link to="/new">+</Link>
 
           <Quote />
           <Footer />
