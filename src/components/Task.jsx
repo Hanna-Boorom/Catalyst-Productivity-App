@@ -3,8 +3,7 @@ import { useState } from "react";
 import { baseURL, config } from "../services";
 
 function Task(props) {
-  const [checked, setChecked] = useState(false);
-  const handleClick = () => setChecked(!checked);
+  // const [checked, setChecked] = useState(false);
 
   const deleteTask = async () => {
     const taskURL = `${baseURL}/${props.task.id}`;
@@ -20,11 +19,10 @@ function Task(props) {
         key={props.task.fields.id}
         type="checkbox"
         id="title"
-        value={checked}
-        onClick={handleClick}
+        // value={checked}
+        onClick={deleteTask}
       />
       <label htmlFor="title">{props.task.fields.title}</label>
-      <button onClick={deleteTask}>Done!</button>
     </div>
   );
 }
