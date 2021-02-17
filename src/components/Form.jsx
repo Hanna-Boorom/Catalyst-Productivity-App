@@ -5,19 +5,23 @@ import { baseURL, config } from "../services";
 
 function Form(props) {
   const [title, setTitle] = useState("");
-  const [isCompleted, setIsCompleted] = useState();
+  const [isCompleted, setIsCompleted] = useState("");
   // const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const newTask = {
-      title,
-      isCompleted,
+      fields: {
+        title,
+        isCompleted,
+      },
     };
-    await axios.post(baseURL, { newTask }, config);
-    // props.setToggleFetch((curr) => !curr);
-    setIsCompleted(false);
+
+    await axios.post(baseURL, newTask, config);
+    // await axios.post(baseURL, newTask, config); **TRIED THIS WAY, STILL GET 422
+    props.setToggleFetch((curr) => !curr);
+    setIsCompleted("false");
     // history.push("/");
   };
 

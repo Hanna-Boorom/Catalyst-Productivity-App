@@ -1,7 +1,9 @@
 function Footer() {
   return (
     <div className="footer">
-      <footer>Footer Goes Heereee! added top margin for sanity</footer>
+      <footer>
+        <p>Dev + Design by Hanna Boorom *added top margin for sanity*</p>
+      </footer>
     </div>
   );
 }
