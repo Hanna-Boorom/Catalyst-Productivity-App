@@ -3,14 +3,16 @@ import { useState } from "react";
 import { baseURL, config } from "../services";
 
 function Task(props) {
-  // const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(false);
 
   const deleteTask = async () => {
     const taskURL = `${baseURL}/${props.task.id}`;
+    setChecked(true);
+    setTimeout(async () => {
+      await axios.delete(taskURL, config);
 
-    await axios.delete(taskURL, config);
-
-    props.setToggleFetch((curr) => !curr);
+      props.setToggleFetch((curr) => !curr);
+    }, 2000);
   };
 
   return (
@@ -19,10 +21,15 @@ function Task(props) {
         key={props.task.fields.id}
         type="checkbox"
         id="title"
-        // value={checked}
+        value={checked}
         onClick={deleteTask}
       />
-      <label htmlFor="title">{props.task.fields.title}</label>
+      <label
+        style={{ textDecoration: checked ? "line-through" : "none" }}
+        htmlFor="title"
+      >
+        {props.task.fields.title}
+      </label>
     </div>
   );
 }
