@@ -33,7 +33,7 @@ function UserGreeting() {
           Welcome <span onClick={clearName}>{name}</span>! Make today great!
         </h2>
       ) : (
-        <h2>Howdy, what's your name?</h2>
+        <h2>Hi there! What's your name?</h2>
       )}
 
       <form onSubmit={handleSubmit}>

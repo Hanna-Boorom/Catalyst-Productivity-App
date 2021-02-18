@@ -8,7 +8,6 @@ import {
   faGithubSquare,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-// import {  } from "@fortawesome/free-solid-svg-icons";
 import Clock from "./components/Clock";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
@@ -27,7 +26,6 @@ function App() {
   useEffect(() => {
     const getToDos = async () => {
       const resp = await axios.get(baseURL, config);
-      // console.log(resp.data.records);
       setTasks(resp.data.records);
     };
     getToDos();
