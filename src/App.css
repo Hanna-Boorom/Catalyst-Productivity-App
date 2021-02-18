@@ -12,7 +12,7 @@ body {
   color: white;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  /* min-height: ; */
 }
 
 nav a {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function UserGreeting() {
-  const localName = localStorage.getItem("name" || "");
+  const localName = localStorage.getItem("name");
   const [name, setName] = useState(localName);
   const [greeting, setGreeting] = useState("Howdy! What's your name?");
   const [inputState, setInputState] = useState(false);
@@ -10,8 +10,6 @@ function UserGreeting() {
     if (localName) {
       localStorage.setItem("name", name);
       setGreeting(`Welcome ${name}! Make today great!`);
-
-      // setName("");
       setInputState(!inputState);
     }
   }, []);
@@ -19,8 +17,6 @@ function UserGreeting() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setGreeting(`Welcome ${name}! Make today great!`);
-
-    // setName("");
     setInputState(!inputState);
   };
 
