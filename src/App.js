@@ -62,7 +62,9 @@ function App() {
       <Route path="/new">
         <div className="form-page">
           <Nav />
-          <h1>What would you like to accomplish today?</h1>
+          <div className="accomplish">
+            <h1>What would you like to accomplish today?</h1>
+          </div>
           <Form setToggleFetch={setToggleFetch} />
         </div>
       </Route>

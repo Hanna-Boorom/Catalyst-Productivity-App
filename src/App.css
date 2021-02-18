@@ -17,6 +17,10 @@ https://images.unsplash.com/photo-1430414734948-17ebbe665afa?ixlib=rb-1.2.1&ixid
 https://images.unsplash.com/photo-1464002255390-2de63a26c637?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60
 */
 
+.accomplish {
+  margin: 0 10px;
+}
+
 /* HOME PAGE */
 .App {
   text-align: center;
@@ -55,6 +59,11 @@ a:visited {
 }
 
 /* NAV */
+nav {
+  margin-bottom: 30vh;
+  font-weight: bold;
+}
+
 nav a {
   padding: 10px;
 }
@@ -64,10 +73,11 @@ nav a:hover {
 }
 
 /* NAME INPUT */
-.name-input {
+.name-input,
+#task-input {
   box-sizing: border-box;
   padding: 12px 20px;
-  width: 100%;
+  width: 90%;
   background-color: rgba(0, 0, 0, 0);
   color: white;
   border-bottom: 5px solid white;
@@ -110,17 +120,45 @@ nav a:hover {
 }
 
 /* CLOCK */
+.clock {
+  margin-top: 10vh;
+}
+
 .clock h1 {
-  font-size: 8vw;
+  font-size: 10vh;
   margin: 2vh 0;
 }
 
-/* FOOTER */
-.footer {
-  font-size: small;
+/* TASKS */
+.tasks-container h3 {
+  font-size: 2em;
+}
+
+#task-input:focus {
+  outline: none;
+}
+
+/* .task-input-form button {
+
+} */
+
+.indiv-task {
+  font-size: 1.5em;
+}
+
+/* QUOTE */
+.quote {
+  font-size: 25px;
+  font-style: italic;
 }
 
 /* FORM */
 .form-page {
-  margin-top: 40vh;
+  margin-top: 4vh;
+  font-size: 20px;
+}
+
+/* FOOTER */
+.footer {
+  margin-bottom: 5px;
 }

@@ -12,7 +12,7 @@ function Task(props) {
       await axios.delete(taskURL, config);
 
       props.setToggleFetch((curr) => !curr);
-    }, 2000);
+    }, 1000);
   };
 
   return (
