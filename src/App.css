@@ -26,3 +26,18 @@ nav a {
 .footer {
   margin-top: 60vh;
 }
+.user-greeting-form h2 span {
+  text-decoration: none;
+  position: relative;
+}
+.user-greeting-form h2 span:hover {
+  text-decoration: line-through;
+}
+
+.user-greeting-form h2 span:hover:after {
+  content: "click here to change name";
+  position: absolute;
+  font-size: 9px;
+  top: 24px;
+  left: 0;
+}
