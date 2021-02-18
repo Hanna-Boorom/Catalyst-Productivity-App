@@ -6,10 +6,10 @@ function Footer() {
       <footer>
         <p>
           Dev + Design by Hanna Boorom
-          <a>
+          <a href="https://github.com/Hanna-Boorom" target="_blank">
             <FontAwesomeIcon icon={["fab", "github-square"]} />
           </a>
-          <a>
+          <a href="https://www.linkedin.com/in/hanna-boorom/" target="_blank">
             <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </a>
         </p>
