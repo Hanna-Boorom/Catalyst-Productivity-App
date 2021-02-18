@@ -23,7 +23,9 @@ https://images.unsplash.com/photo-1464002255390-2de63a26c637?ixlib=rb-1.2.1&ixid
   color: white;
   display: flex;
   justify-content: center;
-  /* min-height: ; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a:link {
@@ -105,7 +107,7 @@ nav a:hover {
 
 /* FOOTER */
 .footer {
-  margin-top: 60vh;
+  font-size: small;
 }
 
 /* FORM */

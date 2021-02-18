@@ -2,6 +2,13 @@ import { useEffect, useState } from "react";
 import { Link, Route } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "./services";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  fab,
+  faGithubSquare,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+// import {  } from "@fortawesome/free-solid-svg-icons";
 import Clock from "./components/Clock";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
@@ -10,6 +17,8 @@ import Quote from "./components/Quote";
 import UserGreeting from "./components/UserGreeting";
 import Task from "./components/Task";
 import "./App.css";
+
+library.add(fab, faGithubSquare, faLinkedin);
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -27,10 +36,10 @@ function App() {
   return (
     <div className="App">
       <Route exact path="/">
-        <div className="home-page">
-          <div className="title">
+        <main className="home-page">
+          <header className="title">
             <h4>Catalyst Productivity</h4>
-          </div>
+          </header>
           <Clock />
 
           <UserGreeting />
@@ -47,8 +56,9 @@ function App() {
           </Link>
 
           <Quote />
-          <Footer />
-        </div>
+        </main>
+
+        <Footer />
       </Route>
 
       <Route path="/new">
