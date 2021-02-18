@@ -1,25 +1,25 @@
 import { useState, useEffect } from "react";
 
 function UserGreeting() {
-  // const localName = localStorage.getItem("name");
-  const [name, setName] = useState("");
+  const localName = localStorage.getItem("name" || "");
+  const [name, setName] = useState(localName);
   const [greeting, setGreeting] = useState("Howdy! What's' your name?");
   const [inputState, setInputState] = useState(false);
 
   useEffect(() => {
-    const localName = localStorage.getItem("name");
-    if (localName) {
-      setName(localName);
-    }
-  }, []);
+    // const localName = localStorage.getItem("name");
+    // if (localName) {
+    //   setName(localName);
+    // }
+    localStorage.setItem("name", name);
+  }, [name]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setGreeting(`Welcome ${name}! Make today great!`);
-    // const { value } = target;
 
-    localStorage.setItem("name", e.target.value);
-    setName("");
+    setGreeting(`Welcome ${name}! Make today great!`);
+
+    // setName("");
     setInputState(!inputState);
   };
 
