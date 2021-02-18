@@ -28,6 +28,9 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <div className="home-page">
+          <div className="title">
+            <h4>Catalyst Productivity</h4>
+          </div>
           <Clock />
 
           <UserGreeting />
@@ -39,7 +42,9 @@ function App() {
             ))}
           </div>
 
-          <Link to="/new">+</Link>
+          <Link to="/new">
+            <h4 className="add-new-task">+</h4>
+          </Link>
 
           <Quote />
           <Footer />
@@ -47,9 +52,11 @@ function App() {
       </Route>
 
       <Route path="/new">
-        <Nav />
-        <h1>What would you like to accomplish today?</h1>
-        <Form setToggleFetch={setToggleFetch} />
+        <div className="form-page">
+          <Nav />
+          <h1>What would you like to accomplish today?</h1>
+          <Form setToggleFetch={setToggleFetch} />
+        </div>
       </Route>
     </div>
   );

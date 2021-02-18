@@ -1,5 +1,5 @@
 body {
-  background: url("https://images.unsplash.com/photo-1517685521684-f42a1db843c7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80")
+  background: url("https://images.unsplash.com/photo-1548439935-5f5f0a4fb02e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1190&q=80")
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -19,8 +19,17 @@ nav a {
   padding: 10px;
 }
 
+nav a:hover {
+  transform: scale(1.5);
+}
+
 .hidden {
   display: none;
+}
+
+/* CLOCK */
+.clock h1 {
+  font-size: 8vw;
 }
 
 .footer {
@@ -40,4 +49,36 @@ nav a {
   font-size: 9px;
   top: 24px;
   left: 0;
+}
+
+/* FORM */
+.form-page {
+  margin-top: 40vh;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  transform: scale(1.5);
+}
+
+.add-new-task:hover {
+  color: gray;
+  transform: scale(1.5);
+}
+
+.add-new-task:hover:after {
+  color: white;
+  content: "add a new task";
+  position: absolute;
+  font-size: 9px;
+  top: 16px;
+  left: 10px;
+  right: 10px;
 }
