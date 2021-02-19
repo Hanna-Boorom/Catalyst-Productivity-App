@@ -15,6 +15,7 @@ import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Quote from "./components/Quote";
 import UserGreeting from "./components/UserGreeting";
+import Weather from "./components/Weather";
 import Task from "./components/Task";
 import "./App.css";
 
@@ -40,6 +41,8 @@ function App() {
             <h4>Catalyst Productivity</h4>
           </header>
           <Clock />
+
+          <Weather />
 
           <UserGreeting />
 
