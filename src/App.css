@@ -31,8 +31,16 @@ a:visited {
   color: white;
 }
 
+.add-new-task {
+  /* font-size: 12px; */
+  transition-duration: 0.5s;
+  transition-property: transform;
+}
+
 .add-new-task:hover {
   transform: scale(1.5);
+  /* font-size: 14px; */
+  transition-duration: 0.5s;
 }
 
 .add-new-task:hover:after {
