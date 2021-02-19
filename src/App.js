@@ -33,7 +33,7 @@ function App() {
   }, [toggleFetch]);
 
   return (
-    <div className="App">
+    <section className="App">
       <Route exact path="/">
         <main className="home-page">
           <header className="title">
@@ -43,12 +43,12 @@ function App() {
 
           <UserGreeting />
 
-          <div className="tasks-container">
+          <section className="tasks-container">
             <h3>Today's Tasks: </h3>
             {tasks.map((task) => (
               <Task key={task.id} task={task} setToggleFetch={setToggleFetch} />
             ))}
-          </div>
+          </section>
 
           <Link to="/new">
             <h4 className="add-new-task">+</h4>
@@ -61,15 +61,15 @@ function App() {
       </Route>
 
       <Route path="/new">
-        <div className="form-page">
+        <section className="form-page">
           <Nav />
-          <div className="accomplish">
+          <section className="accomplish">
             <h1>What would you like to accomplish today?</h1>
-          </div>
+          </section>
           <Form setToggleFetch={setToggleFetch} />
-        </div>
+        </section>
       </Route>
-    </div>
+    </section>
   );
 }
 

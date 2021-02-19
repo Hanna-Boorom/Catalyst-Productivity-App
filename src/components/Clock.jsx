@@ -9,13 +9,14 @@ function Clock() {
   );
 
   useEffect(() => {
-    setInterval(() => {
+    const timeInterval = setInterval(() => {
       setCurrTime(
         new Date().toLocaleString("en-us", {
           hour: "2-digit",
           minute: "2-digit",
         })
       );
+      clearInterval(timeInterval);
     }, 1000);
   }, []);
 

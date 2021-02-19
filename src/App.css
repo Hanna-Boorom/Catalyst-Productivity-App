@@ -215,6 +215,7 @@ nav a:hover {
 
   .quote {
     font-size: 20px;
+    max-width: 250px;
   }
 
   .add-new-task {
@@ -232,13 +233,18 @@ nav a:hover {
   }
 }
 
-@media screen and (max-width: 786px) and (min-width: 320px) {
+@media screen and (max-width: 786px) and (min-width: 321px) {
   .add-new-task {
     font-size: 24px;
   }
+
+  .quote {
+    max-width: 425px;
+    margin: 0 auto;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .home-page {
     margin: 0 10px;
   }
@@ -251,5 +257,9 @@ nav a:hover {
 @media screen and (min-width: 787px) {
   .add-new-task {
     font-size: 28px;
+  }
+
+  .quote {
+    max-width: 768px;
   }
 }
