@@ -6,20 +6,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* https://images.unsplash.com/photo-1516997637904-9d1c9d44e585?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80
-
-https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80
-
-https://images.unsplash.com/photo-1443640100632-9a71be089257?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1189&q=80
-
-https://images.unsplash.com/photo-1430414734948-17ebbe665afa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60
-
-https://images.unsplash.com/photo-1464002255390-2de63a26c637?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60
-*/
-
-.accomplish {
-  margin: 0 10px;
-}
 
 /* HOME PAGE */
 .App {
@@ -192,10 +178,27 @@ nav a:hover {
 /* FOOTER */
 .footer {
   margin-bottom: 5px;
+  min-width: 100vw;
 }
 
 .footer a {
   padding: 0 2px 0 5px;
+}
+
+.photo-credit {
+  font-size: 12px;
+  transition-property: font-size;
+  transition-duration: 0.5s;
+}
+
+.photo-credit:hover {
+  font-size: 14px;
+}
+
+.photo-credit:hover:after {
+  content: "Garret Parker, Unsplash";
+  top: 0px;
+  left: 20px;
 }
 
 @media screen and (max-width: 320px) {

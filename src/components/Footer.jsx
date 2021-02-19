@@ -13,6 +13,15 @@ function Footer() {
             <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </a>
         </p>
+        <div className="photo-credit">
+          <a
+            // className="photo-credit"
+            href="https://unsplash.com/photos/DlkF4-dbCOU"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={["fas", "camera"]} />
+          </a>
+        </div>
       </footer>
     </div>
   );

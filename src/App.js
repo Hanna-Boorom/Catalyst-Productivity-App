@@ -8,6 +8,7 @@ import {
   faGithubSquare,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCamera } from "@fortawesome/free-solid-svg-icons";
 import Clock from "./components/Clock";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
@@ -17,7 +18,7 @@ import UserGreeting from "./components/UserGreeting";
 import Task from "./components/Task";
 import "./App.css";
 
-library.add(fab, faGithubSquare, faLinkedin);
+library.add(fab, faGithubSquare, faLinkedin, faCamera);
 
 function App() {
   const [tasks, setTasks] = useState([]);
