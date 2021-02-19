@@ -41,7 +41,6 @@ function UserGreeting() {
           className={`name-input ${inputState ? "hidden" : ""}`}
           type="text"
           value={name}
-          // value={name || ""}**I TRIED THIS AND IT GOT RID OF THE UNDEFINED ERROR, BUT STILL DOESN'T STORE
           onChange={(e) => setName(e.target.value)}
         />
       </form>

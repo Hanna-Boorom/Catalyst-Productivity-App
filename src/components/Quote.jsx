@@ -1,9 +1,32 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+// **GOT THE RANDOM QUOTE IDEA AND API FROM HERE: https://stackoverflow.com/questions/57696049/how-to-do-a-react-hooks-api-call-and-display-only-one-item
+
 function Quote() {
+  const [quote, setQuote] = useState("");
+  const [author, setAuthor] = useState("");
+
+  const getQuote = async () => {
+    const quoteURL =
+      "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json";
+    const resp = await axios.get(quoteURL);
+    const data = resp.data.quotes;
+    const quoteNum = Math.floor(Math.random() * data.length);
+    const randomQuote = data[quoteNum];
+
+    setQuote(randomQuote.quote);
+    setAuthor(randomQuote.author);
+  };
+
+  useEffect(() => {
+    getQuote();
+  }, []);
+
   return (
     <div className="quote">
       <h5>
-        "We are what we repeatedly do. Excellence, then, is not an act, but a
-        habit." - Aristotle
+        "{quote}" - {author}
       </h5>
     </div>
   );
