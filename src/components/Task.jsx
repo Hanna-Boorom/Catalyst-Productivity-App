@@ -20,6 +20,7 @@ function Task(props) {
       <input
         key={props.task.fields.id}
         type="checkbox"
+        className="checkbox"
         id="title"
         value={checked}
         onClick={deleteTask}
