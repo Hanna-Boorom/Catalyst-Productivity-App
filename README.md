@@ -2,6 +2,8 @@
 
 ## Project Description
 
+https://catalyst-productivity.netlify.app/
+
 Catalyst Productivity is your to-do list reimagined. From the homepage, the user is able to keep track of current tasks/to-dos. Add new tasks as they arise and cross items off the list when you complete them. Beautiful pictures and inspiring quotes help keep you on track and motivated. Catalyst is a React app utilizing an Airtable API and is my version of Momentum, the popular Chrome extension.
 
 ## Wireframes
@@ -70,7 +72,7 @@ See my Component Hierarchy here: https://imgur.com/a/AMTy8Pd
 | Feb 16    | Project Proposal & Approval                      | Complete   |
 | Feb 17    | Component Creation/ Route Setup                  | Complete   |
 | Feb 17    | Get, Set, & Delete Data & Basic Homepage Styling | Complete   |
-| Feb 19    | Component Styling & MVP                          | Incomplete |
+| Feb 19    | Component Styling & MVP                          | Complete   |
 | Feb 20-22 | Advanced CSS Styling & Post MVP                  | Incomplete |
 | Feb 23    | Presentations                                    | Incomplete |
 
@@ -85,12 +87,12 @@ See my Component Hierarchy here: https://imgur.com/a/AMTy8Pd
 | Clock Comp Setup        |    H     |      2hrs      |      1hr      |     1hr     |
 | UserGreeting Comp Setup |    H     |      3hrs      |      2hr      |     2hr     |
 | Form Comp Setup         |    H     |      3hrs      |      2hr      |     2hr     |
-| Form Add Task           |    H     |      2hrs      |      2hr      |     2hr     |
+| Form Add Task           |    H     |      2hrs      |      3hr      |     3hr     |
 | Form Delete Task        |    H     |      2hrs      |      1hr      |     1hr     |
-| Footer Comp Setup       |    L     |      1hrs      |       -       |      -      |
+| Footer Comp Setup       |    L     |      1hrs      |      1hr      |     1hr     |
 | Quote Comp Setup        |    H     |      2hrs      |       -       |      -      |
-| Basic Homepage Styling  |    H     |      2hrs      |       -       |      -      |
-| Basic Component Styling |    H     |      3hrs      |       -       |      -      |
+| Basic Homepage Styling  |    H     |      2hrs      |      4hr      |     4hr     |
+| Basic Component Styling |    H     |      3hrs      |      2hr      |     2hr     |
 | Advanced CSS            |    H     |      4hrs      |       -       |      -      |
 | Total                   |    H     |     31hrs      |       -       |      -      |
 
