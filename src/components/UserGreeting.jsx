@@ -16,6 +16,7 @@ function UserGreeting() {
       localStorage.setItem("name", name);
       setInputState(true);
     }
+    clearInterval(timer);
   }, []);
 
   const handleSubmit = async (e) => {

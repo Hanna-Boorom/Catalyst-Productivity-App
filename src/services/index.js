@@ -6,4 +6,4 @@ export const config = {
   },
 };
 
-export const weatherConfig = process.env.OPEN_WEATHER_API_KEY;
+export const weatherConfig = process.env.REACT_APP_OPEN_WEATHER_API_KEY;

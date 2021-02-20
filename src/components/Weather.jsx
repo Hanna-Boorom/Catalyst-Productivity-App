@@ -3,17 +3,17 @@ import { useEffect } from "react";
 import { weatherConfig } from "../services";
 
 function Weather() {
-  const url = "api.openweathermap.org";
-  const getWeather = async () => {
-    const resp = await axios.get(
-      `${url}/data/2.5/weather?zip=94040,us&APPID=${weatherConfig}`
-    );
-    console.log(resp);
-  };
+  const url =
+    "https://api.openweathermap.org/data/2.5/weather?zip=60060,us&appid=";
+  const zip = 60060;
 
   useEffect(() => {
+    const getWeather = async () => {
+      const resp = await axios.get(`${url}${weatherConfig}`);
+      console.log(resp.data);
+    };
     getWeather();
-  });
+  }, []);
 
   return (
     <div>
