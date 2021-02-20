@@ -40,7 +40,7 @@ function App() {
           <header className="title">
             <h4>Catalyst Productivity</h4>
           </header>
-          <Weather />
+          <Weather setToggleFetch={setToggleFetch} />
 
           <Clock />
 
