@@ -22,7 +22,7 @@ form link wireframe for smartphone view: https://imgur.com/a/YIoDYDM
 
 ## Component Hierarchy
 
-See my Component Hierarchy here: https://imgur.com/a/AMTy8Pd
+See my Component Hierarchy here: https://imgur.com/a/WGlyUgj
 
 ## API and Data Sample
 
@@ -73,7 +73,7 @@ See my Component Hierarchy here: https://imgur.com/a/AMTy8Pd
 | Feb 17    | Component Creation/ Route Setup                  | Complete   |
 | Feb 17    | Get, Set, & Delete Data & Basic Homepage Styling | Complete   |
 | Feb 19    | Component Styling & MVP                          | Complete   |
-| Feb 20-22 | Advanced CSS Styling & Post MVP                  | Incomplete |
+| Feb 20-22 | Advanced CSS Styling & Post MVP                  | Complete   |
 | Feb 23    | Presentations                                    | Incomplete |
 
 ## Timeframes
@@ -90,11 +90,12 @@ See my Component Hierarchy here: https://imgur.com/a/AMTy8Pd
 | Form Add Task           |    H     |      2hrs      |      3hr      |     3hr     |
 | Form Delete Task        |    H     |      2hrs      |      1hr      |     1hr     |
 | Footer Comp Setup       |    L     |      1hrs      |      1hr      |     1hr     |
-| Quote Comp Setup        |    H     |      2hrs      |       -       |      -      |
+| Quote Comp Setup        |    H     |      2hrs      |      1hr      |     1hr     |
 | Basic Homepage Styling  |    H     |      2hrs      |      4hr      |     4hr     |
 | Basic Component Styling |    H     |      3hrs      |      2hr      |     2hr     |
-| Advanced CSS            |    H     |      4hrs      |       -       |      -      |
-| Total                   |    H     |     31hrs      |       -       |      -      |
+| Advanced CSS            |    H     |      4hrs      |      4hr      |     4hr     |
+| Post MVP                |    L     |      4hrs      |      4hr      |     4hr     |
+| Total                   |    H     |     31hrs      |    28.5hrs    |   28.5hrs   |
 
 ## SWOT Analysis
 

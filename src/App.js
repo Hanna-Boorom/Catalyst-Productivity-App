@@ -55,7 +55,9 @@ function App() {
           </section>
 
           <Link to="/new">
-            <h4 className="add-new-task">+</h4>
+            <h4 className="add-new-task">
+              + <br />
+            </h4>
           </Link>
 
           <Quote />

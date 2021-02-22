@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 import { weatherConfig } from "../services";
 
 function Weather(props) {
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState(null);
   const localZip = localStorage.getItem("zip") || "";
-  // const [newZipCode, setNewZipCode] = useState();
   const [currentZipCode, setCurrentZipCode] = useState(localZip);
 
   useEffect(() => {
@@ -27,10 +26,8 @@ function Weather(props) {
     e.preventDefault();
     localStorage.setItem("zip", currentZipCode);
     setCurrentZipCode(currentZipCode);
-
     props.setToggleFetch((curr) => !curr);
-
-    // setZipCode("");
+    // setCurrentZipCode("");
   };
 
   if (!weatherData) {
@@ -39,10 +36,14 @@ function Weather(props) {
 
   return (
     <div>
-      <h5>
-        It's currently {Math.round(weatherData.main.temp)}° in{" "}
-        {weatherData.name}{" "}
-      </h5>
+      {weatherData ? (
+        <h5>
+          It's currently {Math.round(weatherData.main.temp)}° in{" "}
+          {weatherData.name}{" "}
+        </h5>
+      ) : (
+        <h4>...Loading...</h4>
+      )}
       <form className="weather-form" onSubmit={handleSubmit}>
         <input
           type="number"
