@@ -14,6 +14,7 @@ import {
   faCloudShowersHeavy,
   faSun,
   faSnowflake,
+  faCloud,
 } from "@fortawesome/free-solid-svg-icons";
 import Clock from "./components/Clock";
 import Footer from "./components/Footer";
@@ -33,7 +34,8 @@ library.add(
   faSmog,
   faCloudShowersHeavy,
   faSun,
-  faSnowflake
+  faSnowflake,
+  faCloud
 );
 
 function App() {

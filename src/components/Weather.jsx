@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { weatherConfig } from "../services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import WeatherIcon from "./WeatherIcon";
 
 function Weather(props) {
   const [weatherData, setWeatherData] = useState(null);
@@ -37,10 +38,7 @@ function Weather(props) {
 
   return (
     <div>
-      {/* <img
-        className="weather-icon"
-        src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
-      /> */}
+      <WeatherIcon weatherData={weatherData} />
 
       <h5>
         It's currently {Math.round(weatherData.main.temp)}° in{" "}
