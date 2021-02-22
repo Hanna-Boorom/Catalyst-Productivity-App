@@ -29,6 +29,7 @@ function App() {
     const getToDos = async () => {
       const resp = await axios.get(baseURL, config);
       setTasks(resp.data.records);
+      console.log("Welcome to my site! Dev + Design by Hanna Boorom");
     };
     getToDos();
   }, [toggleFetch]);
@@ -40,7 +41,7 @@ function App() {
           <header className="title">
             <h4>Catalyst Productivity</h4>
           </header>
-          {/* <Weather setToggleFetch={setToggleFetch} /> */}
+          <Weather setToggleFetch={setToggleFetch} />
 
           <Clock />
 

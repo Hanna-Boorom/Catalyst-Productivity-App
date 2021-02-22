@@ -4,8 +4,9 @@ import { weatherConfig } from "../services";
 
 function Weather(props) {
   const [weatherData, setWeatherData] = useState({});
+  const localZip = localStorage.getItem("zip") || "";
   // const [newZipCode, setNewZipCode] = useState();
-  const [currentZipCode, setCurrentZipCode] = useState(60060);
+  const [currentZipCode, setCurrentZipCode] = useState(localZip);
 
   useEffect(() => {
     const getWeather = async () => {
@@ -14,12 +15,17 @@ function Weather(props) {
       );
       setWeatherData(resp.data);
       console.log(resp.data);
+
+      if (localZip) {
+        localStorage.setItem("zip", currentZipCode);
+      }
     };
     getWeather();
-  }, [currentZipCode]);
+  }, [localZip]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    localStorage.setItem("zip", currentZipCode);
     setCurrentZipCode(currentZipCode);
 
     props.setToggleFetch((curr) => !curr);
@@ -33,10 +39,10 @@ function Weather(props) {
 
   return (
     <div>
-      {/* <h5>
+      <h5>
         It's currently {Math.round(weatherData.main.temp)}° in{" "}
         {weatherData.name}{" "}
-      </h5> */}
+      </h5>
       <form className="weather-form" onSubmit={handleSubmit}>
         <input
           type="number"
