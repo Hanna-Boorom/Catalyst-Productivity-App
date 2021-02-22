@@ -57,7 +57,7 @@ function UserGreeting() {
           className={`name-input ${inputState ? "hidden" : ""}`}
           type="text"
           value={name}
-          placeholder="Type your name & press Enter"
+          placeholder="Type Name & Press Enter"
           onChange={(e) => setName(e.target.value)}
         />
       </form>

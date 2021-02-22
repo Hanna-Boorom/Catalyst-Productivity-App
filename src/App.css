@@ -7,6 +7,11 @@ body {
   background-size: cover;
 }
 
+/* HEADER */
+.title {
+  font-size: 3vh;
+}
+
 /* HOME PAGE */
 .App {
   text-align: center;
@@ -222,8 +227,47 @@ nav a:hover {
 }
 
 /* WEATHER */
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .weather-icon {
+  font-size: 25px;
+  margin: 15px;
+}
+
+.temperature {
+  margin: 15px 15px 15px 10px;
+}
+
+.zipcode-input {
+  box-sizing: border-box;
+  padding: 12px 20px;
+  background-color: rgba(0, 0, 0, 0);
   color: white;
+  border-bottom: 2px solid white;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  font-size: 2em;
+  text-align: center;
+  width: 70%;
+}
+
+.zipcode-input:focus {
+  outline: none;
+}
+
+.zipcode-input::placeholder {
+  font-size: 16px;
 }
 
 @media screen and (max-width: 320px) {
@@ -248,6 +292,24 @@ nav a:hover {
     top: 10px;
     left: 10px;
     right: 10px;
+  }
+
+  .zipcode-input::placeholder {
+    font-size: 12px;
+  }
+
+  .zipcode-input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .zipcode-input::placeholder {
+    font-size: 12px;
+  }
+
+  .zipcode-input {
+    width: 80%;
   }
 }
 

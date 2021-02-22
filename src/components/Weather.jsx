@@ -34,40 +34,27 @@ function Weather(props) {
   if (!weatherData) {
     return (
       <div>
+        <p>Enter Zip Code Below for Current Weather: </p>
         <form className="weather-form" onSubmit={handleSubmit}>
           <input
+            className="zipcode-input"
             type="number"
-            placeholder="Enter Your ZipCode"
+            placeholder="Type Zip Code & Press Enter"
             value={currentZipCode}
             onChange={(e) => setCurrentZipCode(e.target.value)}
           ></input>
-          <button type="submit" onClick={handleSubmit}>
-            Get Current Weather
-          </button>
         </form>
       </div>
     );
   } else {
     return (
-      <div>
-        <WeatherIcon weatherData={weatherData} />
+      <div className="weather-container">
+        <div className="weather-icon">
+          <WeatherIcon weatherData={weatherData} />
+        </div>
 
-        <h5>
-          It's currently {Math.round(weatherData.main.temp)}° in{" "}
-          {weatherData.name}{" "}
-        </h5>
-
-        {/* <form className="weather-form" onSubmit={handleSubmit}>
-          <input
-            type="number"
-            placeholder="Enter Your ZipCode"
-            value={currentZipCode}
-            onChange={(e) => setCurrentZipCode(e.target.value)}
-          ></input>
-          <button type="submit" onClick={handleSubmit}>
-            Get Current Weather
-          </button>
-        </form> */}
+        <p className="temperature">{Math.round(weatherData.main.temp)}°</p>
+        <p className="city-name">{weatherData.name}</p>
       </div>
     );
   }

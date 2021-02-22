@@ -27,7 +27,7 @@ function Form(props) {
         <label htmlFor="task-input"></label>
         <input
           id="task-input"
-          placeholder="Type task & press Enter"
+          placeholder="Type Task & Press Enter"
           type="textarea"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
