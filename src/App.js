@@ -8,7 +8,13 @@ import {
   faGithubSquare,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCamera,
+  faSmog,
+  faCloudShowersHeavy,
+  faSun,
+  faSnowflake,
+} from "@fortawesome/free-solid-svg-icons";
 import Clock from "./components/Clock";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
@@ -19,7 +25,16 @@ import Weather from "./components/Weather";
 import Task from "./components/Task";
 import "./App.css";
 
-library.add(fab, faGithubSquare, faLinkedin, faCamera);
+library.add(
+  fab,
+  faGithubSquare,
+  faLinkedin,
+  faCamera,
+  faSmog,
+  faCloudShowersHeavy,
+  faSun,
+  faSnowflake
+);
 
 function App() {
   const [tasks, setTasks] = useState([]);

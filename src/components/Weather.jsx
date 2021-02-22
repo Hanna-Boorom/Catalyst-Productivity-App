@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { weatherConfig } from "../services";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Weather(props) {
   const [weatherData, setWeatherData] = useState(null);
@@ -36,14 +37,16 @@ function Weather(props) {
 
   return (
     <div>
-      {weatherData ? (
-        <h5>
-          It's currently {Math.round(weatherData.main.temp)}° in{" "}
-          {weatherData.name}{" "}
-        </h5>
-      ) : (
-        <h4>...Loading...</h4>
-      )}
+      {/* <img
+        className="weather-icon"
+        src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
+      /> */}
+
+      <h5>
+        It's currently {Math.round(weatherData.main.temp)}° in{" "}
+        {weatherData.name}{" "}
+      </h5>
+
       <form className="weather-form" onSubmit={handleSubmit}>
         <input
           type="number"

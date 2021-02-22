@@ -221,6 +221,11 @@ nav a:hover {
   left: 20px;
 }
 
+/* WEATHER */
+.weather-icon {
+  color: white;
+}
+
 @media screen and (max-width: 320px) {
   .clock h1 {
     font-size: 60px;
