@@ -15,7 +15,6 @@ function Weather(props) {
         `https://api.openweathermap.org/data/2.5/weather?zip=${currentZipCode},us&&units=imperial&appid=${weatherConfig}`
       );
       setWeatherData(resp.data);
-      console.log(resp.data);
 
       if (localZip) {
         localStorage.setItem("zip", currentZipCode);
