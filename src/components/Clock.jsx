@@ -16,8 +16,10 @@ function Clock() {
           minute: "2-digit",
         })
       );
-      clearInterval(timeInterval);
     }, 1000);
+    return () => {
+      clearInterval(timeInterval);
+    };
   }, []);
 
   return (
